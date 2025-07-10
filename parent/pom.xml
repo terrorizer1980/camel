@@ -240,7 +240,7 @@
         <httpclient4-version>4.5.13</httpclient4-version>
         <httpasyncclient-version>4.1.4</httpasyncclient-version>
 	<huaweicloud-obs-version>3.21.4.1</huaweicloud-obs-version>
-        <huaweicloud-sdk-version>3.0.32-rc</huaweicloud-sdk-version>
+        <huaweicloud-sdk-version>3.1.49</huaweicloud-sdk-version>
         <hystrix-version>1.5.18</hystrix-version>
         <ical4j-version>1.0.7</ical4j-version>
         <icu4j-version>69.1</icu4j-version>
@@ -255,7 +255,7 @@
         <isorelax-jaxp-bridge-version>1.1</isorelax-jaxp-bridge-version>
         <ivy-version>2.5.0</ivy-version>
         <jackson-version>1.9.12</jackson-version>
-        <jackson2-version>2.12.3</jackson2-version>
+        <jackson2-version>2.15.0</jackson2-version>
         <jackrabbit-version>2.21.6</jackrabbit-version>
         <jain-sip-ri-bundle-version>1.2.154_2</jain-sip-ri-bundle-version>
         <jasminb-jsonapi-version>0.11</jasminb-jsonapi-version>
@@ -577,8 +577,8 @@
         <camel.osgi.import.default.version>[$(version;==;$(@)),$(version;+;$(@)))</camel.osgi.import.default.version>
         <camel.osgi.import.defaults>
         </camel.osgi.import.defaults>
-        <camel.osgi.import.before.defaults />
-        <camel.osgi.import.additional />
+        <camel.osgi.import.before.defaults/>
+        <camel.osgi.import.additional/>
         <camel.osgi.import.pkg>
             org.apache.camel.*;${camel.osgi.import.camel.version},
             ${camel.osgi.import.before.defaults},
@@ -586,18 +586,18 @@
             ${camel.osgi.import.additional},
             *
         </camel.osgi.import.pkg>
-        <camel.osgi.activator />
+        <camel.osgi.activator/>
         <camel.osgi.failok>false</camel.osgi.failok>
         <camel.osgi.private.pkg>!*</camel.osgi.private.pkg>
         <camel.osgi.export.pkg>$${replace;{local-packages};;;\;}</camel.osgi.export.pkg>
         <camel.osgi.export>${camel.osgi.export.pkg};-noimport:=true;${camel.osgi.version}</camel.osgi.export>
         <camel.osgi.version>version=${project.version}</camel.osgi.version>
         <camel.osgi.import>${camel.osgi.import.pkg}</camel.osgi.import>
-        <camel.osgi.dynamic />
+        <camel.osgi.dynamic/>
         <camel.osgi.symbolic.name>${project.groupId}.${project.artifactId}</camel.osgi.symbolic.name>
         <camel.osgi.exclude.dependencies>false</camel.osgi.exclude.dependencies>
-        <camel.osgi.require.capability />
-        <camel.osgi.provide.capability />
+        <camel.osgi.require.capability/>
+        <camel.osgi.provide.capability/>
         <camel.osgi.manifest>${project.build.outputDirectory}/META-INF/MANIFEST.MF</camel.osgi.manifest>
     </properties>
 
@@ -4507,7 +4507,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore />
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                             </pluginExecutions>
@@ -4529,7 +4529,7 @@
                 <executions>
                     <execution>
                         <id>attach-descriptor</id>
-                        <phase />
+                        <phase/>
                     </execution>
                 </executions>
             </plugin>
@@ -4540,7 +4540,7 @@
                 <executions>
                     <execution>
                         <id>enforce-maven-version</id>
-                        <phase />
+                        <phase/>
                     </execution>
                 </executions>
             </plugin>
@@ -4688,7 +4688,7 @@
                         <executions>
                             <execution>
                                 <id>format</id>
-                                <phase />
+                                <phase/>
                             </execution>
                             <execution>
                                 <id>validate</id>
@@ -4705,7 +4705,7 @@
                         <executions>
                             <execution>
                                 <id>sort-imports</id>
-                                <phase />
+                                <phase/>
                             </execution>
                             <execution>
                                 <id>check</id>
